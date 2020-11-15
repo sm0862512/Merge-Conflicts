@@ -1,28 +1,93 @@
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
-  
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  
+
   <body>
     <script>
       // Martin's script
       var name = prompt("Please enter your name:");
       document.writeln("It's a pleasure to meet you, " + name + ".");
-      
-      spades = ["Ace of Spades", "2 of Spades", "3 of Spades", "4 of Spades", "5 of Spades", "6 of Spades", "7 of Spades", "8 of Spades", "9 of Spades", "10 of Spades", "Jack of Spades", "Queen of Spades", "King of Spades"];
-      diamonds = ["Ace of Diamonds", "2 of Diamonds", "3 of Diamonds", "4 of Diamonds", "5 of Diamonds", "6 of Diamonds", "7 of Diamonds", "8 of Diamonds", "9 of Diamonds", "10 of Diamonds", "Jack of Diamonds", "Queen of Diamonds", "King of Diamonds"];
-      clubs = ["Ace of Clubs", "2 of Clubs", "3 of Clubs", "4 of Clubs", "5 of Clubs", "6 of Clubs", "7 of Clubs", "8 of Clubs", "9 of Clubs", "10 of Clubs", "Jack of Clubs", "Queen of Clubs", "King of Clubs"];
-      hearts = ["Ace of Hearts", "2 of Hearts", "3 of Hearts", "4 of Hearts", "5 of Hearts", "6 of Hearts", "7 of Hearts", "8 of Hearts", "9 of Hearts", "10 of Hearts", "Jack of Hearts", "Queen of Hearts", "King of Hearts"];
+
+      spades = [
+        "Ace of Spades",
+        "2 of Spades",
+        "3 of Spades",
+        "4 of Spades",
+        "5 of Spades",
+        "6 of Spades",
+        "7 of Spades",
+        "8 of Spades",
+        "9 of Spades",
+        "10 of Spades",
+        "Jack of Spades",
+        "Queen of Spades",
+        "King of Spades",
+      ];
+      diamonds = [
+        "Ace of Diamonds",
+        "2 of Diamonds",
+        "3 of Diamonds",
+        "4 of Diamonds",
+        "5 of Diamonds",
+        "6 of Diamonds",
+        "7 of Diamonds",
+        "8 of Diamonds",
+        "9 of Diamonds",
+        "10 of Diamonds",
+        "Jack of Diamonds",
+        "Queen of Diamonds",
+        "King of Diamonds",
+      ];
+      clubs = [
+        "Ace of Clubs",
+        "2 of Clubs",
+        "3 of Clubs",
+        "4 of Clubs",
+        "5 of Clubs",
+        "6 of Clubs",
+        "7 of Clubs",
+        "8 of Clubs",
+        "9 of Clubs",
+        "10 of Clubs",
+        "Jack of Clubs",
+        "Queen of Clubs",
+        "King of Clubs",
+      ];
+      hearts = [
+        "Ace of Hearts",
+        "2 of Hearts",
+        "3 of Hearts",
+        "4 of Hearts",
+        "5 of Hearts",
+        "6 of Hearts",
+        "7 of Hearts",
+        "8 of Hearts",
+        "9 of Hearts",
+        "10 of Hearts",
+        "Jack of Hearts",
+        "Queen of Hearts",
+        "King of Hearts",
+      ];
     </script>
-    
+    <br />
+    <div randomnumber></div>
     <script>
-      // Shane's script
+        var randomnumber = Math.floor(Math.random() * 51);
+        console.log(randomnumber)
+        var guess; 
+        guess = prompt("ender a number from 1 to 50");
+        if ( guess < randomnumber) {
+         alert("Not right");
+         } else if (guess > randomnumber) {
+           alert("not right");
+         } else if (guess == randomnumber){
+           alert("you got it");
+         }
     </script>
   </body>
-  
 </html>
